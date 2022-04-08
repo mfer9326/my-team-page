@@ -1,0 +1,109 @@
+html {
+  box-sizing: border-box;
+
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+  max-width: 90%;
+  width: 1200px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 100%;
+}
+
+.header {
+  margin-top: 35px;
+  margin-bottom: 38px;
+}
+
+@media (min-width:768px) {
+  .header {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header__heading {
+  font-family: 'PT Serif', serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.main__title {
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.main__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  width: 333px;
+  margin-bottom: 38px;
+}
+
+@media (min-width:768px) {
+  .main__heading--desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  
+}
+
+
+
+.main__text {
+  font-size: 18px;
+}
+
+
+.main__gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+@media (min-width:768px) {
+  .main__gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.main__card:nth-child(2),
+.main__card:nth-child(4),
+.main__card:nth-child(6) {
+  margin-top: 70px;
+}
+
+.main__img {
+  display: flex;
+}
+
+.main__ocupacion {
+  font-family: PT Serif;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.main__name {
+  font-weight: 600;
+}
